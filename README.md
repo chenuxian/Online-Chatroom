@@ -1,5 +1,5 @@
 # facebook-style-online-chatroom
-A simple facebook style online chat room, can one-to-one or multi-person
+A simple facebook style online chat room, can one-to-one or multi-person.
 
 # Introduction
 This is part of my team's final project of the "soft engineering" course in June 2016.   
