@@ -2,9 +2,9 @@
 A simple online chat room, can one-to-one or multi-person
 
 # Introduction
-This is part of my team's final project of the "soft engineering" course in June 2016.
-I contributed to the friend and message system.
-In this project I focused on the backend...you know what I mean :P
+This is part of my team's final project of the "soft engineering" course in June 2016.   
+I contributed to the friend and message system.   
+In this project I focused on the backend...you know what I mean :P   
 
 # Features
 1. Show friend list.
@@ -14,10 +14,10 @@ In this project I focused on the backend...you know what I mean :P
 
 # Database
 If you want to write your own website, you need change 4 lines in *config.php*    
-<code>$host="";</code>
-<code>$db_username="";</code> 
-<code>$password="";</code>
-<code>$database="";</code>
+<code>$host="";</code>    
+<code>$db_username="";</code>     
+<code>$password="";</code>    
+<code>$database="";</code>    
 
 Also, you need to create 3 table:
 ![](/img/1.png)
@@ -26,11 +26,11 @@ Also, you need to create 3 table:
 
 
 # DEMO
-Only message system(this github project's code), click [here](http://140.116.245.148/WebCourse/students/f74026048/online-message/login.html)
+Only message system(this github project's code), click [here](http://140.116.245.148/WebCourse/students/f74026048/online-message/login.html)   
 **Input your id and login (id: 1~13 you can use, is our test id)**
 
 ***
 
 
-To use the all features, and surf the whole project, click [here](http://140.116.245.148/WebCourse/students/f74026048/softpro/self_info/signin.html)
+To use the all features, and surf the whole project, click [here](http://140.116.245.148/WebCourse/students/f74026048/softpro/self_info/signin.html)   
 You can create your own account, enjoy it :)
