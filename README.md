@@ -13,7 +13,7 @@ In this project I focused on the backend...you know what I mean :P
 4. If the chatroom has the message that you do not read yet, the chatroom's background color will change.
 
 # Database
-If you want to write your own website, you need change 4 lines in *config.php*    
+If you want to write your own website, you need to change 4 lines in *config.php*    
 <code>$host="";</code>    
 <code>$db_username="";</code>     
 <code>$password="";</code>    
