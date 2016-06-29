@@ -19,7 +19,7 @@ If you want to write your own website, you need change 4 lines in *config.php*
 <code>$password="";</code>    
 <code>$database="";</code>    
 
-Also, you need to create 3 table:
+Also, you need to create 3 tables:
 ![](/img/1.png)
 ![](/img/2.png)
 ![](/img/3.png)
