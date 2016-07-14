@@ -10,7 +10,7 @@ function getChatMemberName() {
     ajaxRequest2.onreadystatechange = function() {
         if (ajaxRequest2.readyState == 4 && (ajaxRequest2.status == 200 || ajaxRequest2.status == 304)) {
             var receiver_name = ajaxRequest2.responseText;
-            document.getElementById("chat_name").innerHTML = "&nbsp" + receiver_name;
+            document.getElementById("chat_name").innerHTML = "&nbsp;" + receiver_name;
         }
     };
 }
@@ -25,12 +25,15 @@ function getChatContent(update) {
     ajaxRequest3.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     ajaxRequest3.send(para3);
     ajaxRequest3.onreadystatechange = function() {
-        if (ajaxRequest3.readyState == 4 && (ajaxRequest3.status == 200 || ajaxRequest3.status == 304)) {
-            // document.getElementById("dialog").value = "";
-            document.getElementById("chat_history").innerHTML = ajaxRequest3.responseText;
-            // scroll to bottom
-            if(update !== "update") {
+        if (ajaxRequest3.readyState == 4 && (ajaxRequest3.status == 200 || ajaxRequest3.status == 304)) {    
+            if(!update) {
+                document.getElementById("chat_history").innerHTML = ajaxRequest3.responseText;
                 document.getElementById("chat_history").scrollTop = document.getElementById("chat_history").scrollHeight;
+            } else {
+                if(document.getElementById("chat_history").innerHTML !== ajaxRequest3.responseText) {
+                    document.getElementById("chat_history").innerHTML = ajaxRequest3.responseText;
+                    document.getElementById("chat_history").scrollTop = document.getElementById("chat_history").scrollHeight;
+                } 
             }
         }
     };

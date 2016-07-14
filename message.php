@@ -36,7 +36,7 @@
             <hr>
             <button id="cancel_button" type="button" class="btn btn-danger" onclick="toggleChooseMultiMenu()">Cancel</button>  
             <button id="create_button" type="button" class="btn btn-default" onclick="multi_create()">Create</button>
-            &nbsp
+            &nbsp;
         </div>
     </div>
 

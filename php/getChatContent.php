@@ -50,15 +50,15 @@
             $true_time = (date("m/d h:i:sa", $row[2]));
 
             if ($last_sender == "") {
-                $all_content = "<span style='color:#1a1aff'>(".$sender_name[0].")</span> at ".$true_time."&nbsp:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp".$row[0]."<br>";
+                $all_content = "<span style=\"color:#1a1aff\">(".$sender_name[0].")</span> at ".$true_time."&nbsp;:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$row[0]."<br>";
                 $last_sender = $sender_name;
                 $last_sendtime = $row[2];
             } else {
                 // exceed 60sec then show name and time
                 if ($row[2] - $last_sendtime > 60 || $last_sender != $sender_name) {
-                    $all_content = $all_content."<hr><span style='color:#1a1aff'>(".$sender_name[0].")</span> at ".$true_time."&nbsp:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp".$row[0]."<br>";;
+                    $all_content = $all_content."<hr><span style=\"color:#1a1aff\">(".$sender_name[0].")</span> at ".$true_time."&nbsp;:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$row[0]."<br>";;
                 } else {
-                    $all_content = $all_content."&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp".$row[0]."<br>";;
+                    $all_content = $all_content."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$row[0]."<br>";;
                 }
                 $last_sender = $sender_name;
                 $last_sendtime = $row[2];

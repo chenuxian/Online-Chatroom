@@ -12,8 +12,10 @@ function updateHistory() {
     update_ajaxRequest.send(update_para);
     update_ajaxRequest.onreadystatechange = function() {
         if (update_ajaxRequest.readyState == 4 && (update_ajaxRequest.status == 200 || update_ajaxRequest.status == 304)) {
-            document.getElementById("history").innerHTML = update_ajaxRequest.responseText;
-            getChatContent("update");
+            if(document.getElementById("history").innerHTML !== update_ajaxRequest.responseText) {
+                document.getElementById("history").innerHTML = update_ajaxRequest.responseText;
+                getChatContent(true);
+            }
         }
     };
 }
