@@ -4,7 +4,6 @@ A simple facebook style online chat room, can one-to-one or multi-person.
 # Introduction
 This is part of my team's final project of the "soft engineering" course in June 2016.   
 I contributed to the friend and message system.   
-In this project I focused on the backend...you know what I mean :P   
 
 # Features
 1. Show friend list.
@@ -33,4 +32,4 @@ Only message system(this github project's code), click [here](http://140.116.245
 
 
 To use the all features, and surf the whole project, click [here](http://140.116.245.148/WebCourse/students/f74026048/softpro/self_info/signin.html)   
-You can create your own account, enjoy it :)
+You can create your own account.
